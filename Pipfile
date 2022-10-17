@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+insights-core = {git = "ssh://github.com/RedHatInsights/insights-core.git", ref = "v3.0.296" }
+
+[dev-packages]
+insights-core = {editable = true, path = "./../insights-core"}
+
+[requires]
+python_version = "3.6"
